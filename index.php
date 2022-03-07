@@ -14,7 +14,12 @@
     />
   </head>
   <body>
-    <header></header>
+    <div class="header">
+      <li><a class="headertekst" href="index.php">Home</a></li>
+      <li><a class="headertekst" href="index.php">Contact</a></li>
+      <li><a class="headertekst" href="index.php">Betalen</a></li>
+    </div>
     <div class="p1"></div>
+    <div class="footer"></div>
   </body>
 </html>

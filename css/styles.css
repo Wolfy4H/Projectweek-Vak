@@ -7,14 +7,8 @@
   text-decoration: none;
 }
 
-.body {
-  background: black;
-  width: 100%;
-  height: 200px;
-}
-
-.P1 {
-  background-color: yellow;
-  width: 100%;
-  height: 750px;
+.p1 {
+  background-color: orange;
+  width: auto;
+  height: 1000px;
 }

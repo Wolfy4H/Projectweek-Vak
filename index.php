@@ -15,21 +15,23 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo-site">
-        <img
-          src="img/fazbearspizza.png"
-          alt="img/fazbearspizza.png"
-          width="100%"
-          height="100%"
-        />
+      <div class="headertekst">
+        <li><a class="headertekst" href="index.php">Home</a></li>
+        <li><a class="headertekst" href="index.php">Contact</a></li>
+        <li><a class="headertekst" href="index.php">Betalen</a></li>
       </div>
-      <li><a class="headertekst" href="index.php">Home</a></li>
-      <li><a class="headertekst" href="index.php">Contact</a></li>
-      <li><a class="headertekst" href="index.php">Betalen</a></li>
     </div>
-    <div class="p1">
-      <div class="openingstijden"></div>
+
+    <div class="body">
+      <div class="beginbutton"></div>
+      <img
+        src="img/Pizza_achtergrond.jpg"
+        alt="img/Pizza_achtergrond.jpg"
+        width="100%"
+        height="700px"
+      />
     </div>
+
     <div class="footer"></div>
   </body>
 </html>

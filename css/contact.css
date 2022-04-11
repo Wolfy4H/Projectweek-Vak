@@ -78,69 +78,56 @@ body {
   justify-content: center;
 }
 
-.achtergrond {
-  height: 635px;
-  width: auto;
-}
-
-/*beginscherm knop + button struggles*/
-.aandeslag {
-  width: 300px;
-  height: 200px;
-  justify-content: space-around;
-  background-color: rgba(192, 192, 192, 0.658);
-  border: solid 3px rgba(148, 148, 148, 0.788);
-  border-radius: 10%;
-  box-shadow: 3px 6px rgba(143, 143, 143, 0.856);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.aandeslag p {
-  font-size: 25px;
-}
-
-.button_aandeslagJa {
+.ruimte1 {
   width: 100%;
-  height: 50px;
-  display: flex;
+  height: 534px;
+  background-color: rgb(192, 192, 192);
   align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.tekstvlak1 {
+  width: 800px;
+  height: 300px;
+  background-color: darkgreen;
+  background-image: linear-gradient(
+    to right,
+    darkgreen,
+    azure,
+    azure,
+    orangered
+  );
+  display: flex;
   justify-content: center;
 }
 
-.buttonJa {
-  width: 60px;
-  height: 60px;
-  border: solid rgba(148, 148, 148, 0.788);
-  background-color: rgba(153, 153, 153, 0.87);
-  border-radius: 25%;
+.contacttekst {
+  height: 400px;
+  width: 600px;
 }
 
-.buttonJa:hover {
-  background-color: white;
-  cursor: pointer;
-}
-
-.button_aandeslagNee {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
+.contacttekst p {
   justify-content: center;
+  color: black;
+  text-size-adjust: 50px;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
-.buttonNee {
-  width: 60px;
-  height: 60px;
-  border: solid rgba(148, 148, 148, 0.788);
-  background-color: rgba(153, 153, 153, 0.87);
-  border-radius: 25%;
+.p .opletten {
+  text-size-adjust: 100px;
+  margin-left: 20px;
+  margin-top: 60px;
 }
 
-.buttonNee:hover {
-  background-color: white;
-  cursor: pointer;
+@media only screen and (max-width: 650px) {
+  .tekstvlak1 {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -152,14 +139,6 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
-  .header {
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media only screen and (max-width: 350px) {
   .header {
     height: 150px;
     display: flex;

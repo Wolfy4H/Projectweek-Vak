@@ -14,6 +14,10 @@
     />
   </head>
 
+  <?php
+  include("connector.php");
+  ?>
+
   <body>
   <div class="header">
         <img class="header_logo" src="img/logoPizza.webp" />
@@ -22,6 +26,7 @@
         <li><a href="contact.php">Contact</a></li>
         <li><a href="betalen.php">Betalen</a></li>
         <li><a href="bestellen.php">Bestellen</a></li>
+        <li><a href="login.php">Login</a></li>
       </div>
     </div>
   <div class="header_space"></div>

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: "gstatic", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 400px;
+  height: 320px;
+  position: absolute;
+  background-color: rgba(192, 192, 192, 0.658);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.psw {
+  width: 250px;
+  height: 25px;
+  background-color: azure;
+}
+
+.usr {
+  width: 250px;
+  height: 25px;
+  background-color: azure;
+}
+
+.sbt {
+  width: 150px;
+  height: 50px;
+  margin-top: 100px;
+  background-color: azure;
+  transition: 0.35s;
+}
+
+.register {
+  width: 150px;
+  height: 50px;
+  background-color: azure;
+  transition: 0.35s;
+}
+
+.sbt:hover {
+  background-color: orangered;
+  transition: 0.35s;
+}
+
+.register:hover {
+  background-color: orangered;
+  transition: 0.35s;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header_space {
+  width: 100%;
+  height: 100px;
+}
+
+.header_logo {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(192, 192, 192);
+  border: 3px solid black;
+}
+
+.headertekst {
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 25px;
+  padding-left: 7px;
+  margin-top: 20px;
+  height: 55px;
+  width: 100%;
+}
+
+.headertekst a {
+  padding-left: 7vw;
+  padding-right: 7px;
+  color: lightgreen;
+}
+
+.footer {
+  background-color: orangered;
+  background-image: linear-gradient(
+    to right,
+    darkgreen,
+    azure,
+    azure,
+    orangered
+  );
+  width: auto;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 534px;
+  background-image: url(../img/Pizza_achtergrond.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+  }
+}

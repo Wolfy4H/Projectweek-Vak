@@ -26,7 +26,7 @@
 
     <div class="middenstuk1">
       <div class="container">
-        <div class="bovenkanttekst"><p>Pizza Kroket</p>
+        <div class="bovenkanttekst"><p>Pizza Salami</p>
       </div>
           <div class="plek">
             <img class="pizzaplaatjes" src="img/PizzaSalami.jpeg" alt="PizzaSalami">

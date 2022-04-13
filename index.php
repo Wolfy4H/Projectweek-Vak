@@ -15,7 +15,7 @@
   </head>
 
   <?php
-  include("includes/connect.php");
+  include("connector.php");
   ?>
 
   <body>

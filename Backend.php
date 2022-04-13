@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/backend.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,40 +19,33 @@
   ?>
 
   <body>
-  <div class="header">
-        <img class="header_logo" src="img/logoPizza.webp" />
+    <div class="header">
+      <img class="header_logo" src="img/logoPizza.webp" />
       <div class="headertekst">
         <li><a href="index.php">Home</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="betalen.php">Betalen</a></li>
         <li><a href="bestellen.php">Bestellen</a></li>
-        <li><a href="login.php">Log</a></li>
+        <li><a href="login.php">Login</a></li>
       </div>
     </div>
-  <div class="header_space"></div>
-  <div class="ruimte">
+    <div class="header_space"></div>
+    <div class="ruimte">
+      <button class="buttonsC">
+        <p>Create</p>
+      </button>
+      <button class="buttonsU">
+        <p>Update</p>
+      </button>
+      <button class="buttonsD">
+        <p>Delete</p>
+      </button>
+    </div>
 
-      <div class="aandeslag">
-        <div class="aandeslag_text">
-          <p>wilt u iets bestellen?</p>
-            </div>
-              <div class="button_aandeslagJa">
-                <li><a href="bestellen.php">
-                  <button class="buttonJa">Ja</button>
-                </a></li>
-              </div>
-            <div class="button_aandeslagNee">
-              <li><a href="contact.php">
-            <button class="buttonNee">Nee</button>
-          </a></li>
-        </div>
-      </div>
-    </div>
-    
     <script src="/main.js"></script>
 
     <div class="footer">
-      <p>all information about us is on the page "Contact"</p>
+      <p>Welcome owner ^^. u look tasty, just like the pizza's. :)</p>
     </div>
   </body>
 </html>

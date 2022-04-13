@@ -150,19 +150,3 @@ body {
     flex-wrap: wrap;
   }
 }
-
-@media only screen and (max-width: 650px) {
-  .header {
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .header {
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}

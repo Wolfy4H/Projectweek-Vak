@@ -20,6 +20,10 @@
     </div>
     <div class="header_space"></div>
 
+    <?php
+    include("includes/connect.php");
+    ?>
+
     <div class="container">
       <img class="bg" src="Images/loginBG.jpg" alt="" />
       <div class="form">

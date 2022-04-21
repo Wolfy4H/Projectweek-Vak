@@ -71,17 +71,8 @@ body {
 }
 
 .achtergrond {
-  height: 635px;
+  height: auto;
   width: auto;
-}
-
-.ruimte {
-  width: 100%;
-  height: 534px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .buttonsC {
@@ -90,28 +81,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(192, 192, 192);
   border: solid 3px red;
+  background-color: greenyellow;
 }
 
 .buttonsU {
-  width: 200px;
-  height: 150px;
+  width: 100px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(192, 192, 192);
   border: solid 3px red;
+  background-color: darkcyan;
 }
 
 .buttonsD {
-  width: 200px;
-  height: 150px;
-  display: flex;
+  width: 100px;
+  height: 75px;
   align-items: center;
   justify-content: center;
-  background-color: rgb(192, 192, 192);
   border: solid 3px red;
+  background-color: darkcyan;
+  display: none;
+}
+
+.inviz {
+  display: none;
 }
 
 .buttonsC:hover {
@@ -127,6 +122,98 @@ body {
 .buttonsD:hover {
   background-color: white;
   cursor: pointer;
+}
+
+.editbuttonsplek {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.middenstuk1 {
+  width: auto;
+  height: auto;
+  background-color: rgb(192, 192, 192);
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plek {
+  width: 400px;
+  height: 300px;
+  background-color: orangered;
+  align-items: flex-end;
+  justify-content: center;
+  border: solid 5px rgb(194, 52, 0);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bovenkanttekst {
+  width: 400px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(192, 192, 192);
+  border: 2px solid rgb(148, 148, 148);
+  background-image: linear-gradient(
+    to right,
+    darkgreen,
+    azure,
+    azure,
+    orangered
+  );
+  font-size: 30px;
+  display: flex;
+}
+
+.ondergedeelte_in_plek {
+  background-color: lightgreen;
+  width: 400px;
+  height: 75px;
+  border: 3px solid rgb(116, 192, 116);
+  background-image: linear-gradient(
+    to right,
+    darkgreen,
+    azure,
+    azure,
+    orangered
+  );
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  display: flex;
+}
+
+.ondergedeelte_in_plek:hover {
+  border-radius: 20px;
+  transition: 0.45s;
+  box-shadow: inset -400px 0 0 0 orangered;
+  cursor: pointer;
+}
+
+.pizzaplaatjes {
+  width: 100%;
+  height: 100%;
+}
+
+.buttoncreateplek {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkcyan;
 }
 
 @media only screen and (max-width: 650px) {

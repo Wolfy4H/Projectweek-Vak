@@ -30,17 +30,65 @@
       </div>
     </div>
     <div class="header_space"></div>
-    <div class="ruimte">
-      <button class="buttonsC">
-        <p>Create</p>
-      </button>
-      <button class="buttonsU">
-        <p>Update</p>
-      </button>
-      <button class="buttonsD">
-        <p>Delete</p>
-      </button>
+
+    <div class="buttoncreateplek">
+      <a href="/minicrud/create.php">
+        <button class="buttonsC">
+          <p>Create</p>
+        </button>
+      </a>
     </div>
+
+    <div class="middenstuk1">
+      <?php
+        include_once("includes/connect.php");
+
+        $sql = "SELECT * FROM producten ORDER BY categorie DESC";
+        $stmt = $connect->prepare($sql); $stmt->execute(); $result =
+      $stmt->fetchAll(); foreach ($result as $product) { ?>
+
+      <div class="container">
+        <div class="bovenkanttekst">
+          <p><?php echo $product['naam']; ?></p>
+        </div>
+        <div class="plek">
+          <img
+            class="pizzaplaatjes"
+            src="<?php echo $product['afbeelding']; ?>"
+            alt="PizzaSalami"
+          />
+        </div>
+        <div class="ondergedeelte_in_plek">
+          <p>toevoegen aan bestelling</p>
+        </div>
+        <div class="editbuttonsplek">
+          <a href="/minicrud/create.php">
+            <button class="buttonsU">
+              <p>Update</p>
+            </button>
+          </a>
+            <form action="delete.php" method="post">
+              <input
+                class="inviz"
+                type="text"
+                name="id"
+                value="<?php echo $product['id']; ?>"
+              />
+              <button type="submit" name="delete" class="item_delete_butn">
+                Delete
+              </button>
+            </form>
+          </div>
+        </div>
+
+      <?php 
+        }
+      ?>
+
+      </div>
+    </div>
+
+    <div class="product_bijwerken"></div>
 
     <script src="/main.js"></script>
 

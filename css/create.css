@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: "gstatic", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-image: url(../img/Pizza_achtergrond.jpg);
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header_space {
+  width: 100%;
+  height: 100px;
+}
+
+.header_logo {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(192, 192, 192);
+  border: 3px solid black;
+}
+
+.headertekst {
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 25px;
+  padding-left: 7px;
+  margin-top: 20px;
+  height: 55px;
+  width: 100%;
+}
+
+.headertekst a {
+  padding-left: 7vw;
+  padding-right: 7px;
+  color: lightgreen;
+}
+
+.footer {
+  background-color: orangered;
+  background-image: linear-gradient(
+    to right,
+    darkgreen,
+    azure,
+    azure,
+    orangered
+  );
+  width: auto;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ruimte {
+  width: 100%;
+  height: 534px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background-color: orangered;
+  background-image: linear-gradient(
+    to right,
+    darkgreen,
+    azure,
+    azure,
+    orangered
+  );
+  width: auto;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snackplek {
+  width: 50%;
+  height: 350px;
+  background-color: darkcyan;
+  border: solid black 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -20,64 +20,50 @@
     </div>
     <div class="header_space"></div>
 
-    <div class="search_bar">
-      <input type="text" placeholder="Search..">
-    </div>
+    <?php
+    if (!empty($_POST)){
+    $search = $_POST['search'];
+    $sql = "SELECT * FROM producten WHERE naam LIKE '%". $search. "%'";
+    } else {
+      $sql = "SELECT * FROM producten ORDER BY categorie DESC";
+    }
+    ?>
+
+    <form action="bestellen.php" method="POST">
+      <div class="search_bar">
+        <input name="search" type="text" placeholder="Search.." /> 
+      </div>
+    </form>
+      
 
     <div class="middenstuk1">
-      <div class="container">
-        <div class="bovenkanttekst"><p>Pizza Salami</p>
-      </div>
-          <div class="plek">
-            <img class="pizzaplaatjes" src="img/PizzaSalami.jpeg" alt="PizzaSalami">
+      <?php
+        include_once("includes/connect.php");
+
+        $stmt = $connect->prepare($sql); $stmt->execute(); $result =
+        $stmt->fetchAll(); 
+
+        foreach ($result as $product) {
+      ?>
+
+          <div class="container">
+            <div class="bovenkanttekst">
+              <p><?php echo $product['naam']; ?></p>
             </div>
-          <div class="ondergedeelte_in_plek"><p>toevoegen aan bestelling</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="bovenkanttekst"><p>Pizza (Normale)</p>
-      </div>
-          <div class="plek">
-            <img class="pizzaplaatjes" src="img/Pizza.jpg" alt="Pizza">
+            <div class="plek">
+              <img
+                class="pizzaplaatjes"
+                src="<?php echo $product['afbeelding']; ?>"
+                alt="PizzaSalami"
+              />
             </div>
-          <div class="ondergedeelte_in_plek"><p>toevoegen aan bestelling</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="bovenkanttekst"><p>Pizza Chicken</p>
-      </div>
-          <div class="plek">
-            <img class="pizzaplaatjes" src="img/PizzaChicken.webp" alt="PizzaChicken">
-            </div>
-          <div class="ondergedeelte_in_plek"><p>toevoegen aan bestelling</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="bovenkanttekst"><p>Pizza Vegan</p>
-      </div>
-          <div class="plek">
-            <img class="pizzaplaatjes" src="img/PizzaVegan.jpeg" alt="PizzaVegan">
-            </div>
-          <div class="ondergedeelte_in_plek"><p>toevoegen aan bestelling</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="bovenkanttekst"><p>Pizza Hawai</p>
-      </div>
-          <div class="plek">
-            <img class="pizzaplaatjes" src="img/PizzaHawai.jpg" alt="PizzaHawai">
-            </div>
-          <div class="ondergedeelte_in_plek"><p>toevoegen aan bestelling</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="bovenkanttekst"><p>Pizza Mosserella</p>
-      </div>
-          <div class="plek">
-            <img class="pizzaplaatjes" src="img/PizzaMosserella.jpeg" alt="PizzaMosserella">
-            </div>
-          <div class="ondergedeelte_in_plek"><p>toevoegen aan bestelling</p>
-        </div>
+            <div class="ondergedeelte_in_plek"><a herf="index.php"><p>toevoegen aan bestelling</p></a></div>
+          </div>
+
+      <?php 
+        }
+      ?>
+
       </div>
     </div>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/create.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,24 +32,29 @@
   <div class="header_space"></div>
   <div class="ruimte">
 
-      <div class="aandeslag">
-        <div class="aandeslag_text">
-          <p>wilt u iets bestellen?</p>
-            </div>
-              <div class="button_aandeslagJa">
-                <li><a href="bestellen.php">
-                  <button class="buttonJa">Ja</button>
-                </a></li>
-              </div>
-            <div class="button_aandeslagNee">
-              <li><a href="contact.php">
-            <button class="buttonNee">Nee</button>
-          </a></li>
-        </div>
-      </div>
+
+<div class="snackplek">
+        <form method="post" action="php/insert.php"  >
+            <label for="naam">Name</label><br>
+            <input type="text" id="fname" name="naam"><br>
+            <label for="beschrijving">Description</label><br>
+            <input type="text" id="lname" name="beschrijving"><br>
+            <label for="prijs">Price</label><br>
+            <input type="text" id="price" name="prijs"><br>
+            <label for="categoie">afbeeldingen</label><br>
+            <input type="text" id="afbeelding" name="afbeelding" value="./img/"><br>
+            <label for="categoie">Select a category</label><br>
+            <select name="categorie">
+            
+                <option value="Food">Food</option>
+                <option value="Appetizers">Appetizers</option>
+                <option value="Deserts">Deserts</option>
+                <option value="Drinks">Drinks</option>
+            </select><br><br>
+            <input type="submit" value="Add Product">
+        </form>
     </div>
-    
-    <script src="/main.js"></script>
+  </div>
 
     <div class="footer">
       <p>all information about us is on the page "Contact"</p>

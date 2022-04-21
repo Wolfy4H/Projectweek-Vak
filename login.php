@@ -27,7 +27,7 @@
     <div class="container">
       <img class="bg" src="Images/loginBG.jpg" alt="" />
       <div class="form">
-        <form action="uitkomst.php" method="post">
+        <form action="/minicrud/backend.php" method="post">
           <br />
           <p>username</p>
           <input
@@ -44,11 +44,11 @@
             name="password"
             placeholder="Password..."
           />
-          <br />
-          <input class="sbt" type="submit" name="knop" value="Login" />
-          <a href="">
-            <button class="register">Register</button>
-          </a>
+          <br/>
+            <a href="backend.php">
+              <input class="sbt" type="submit" name="knop" value="Login" />
+            </a>
+          <button class="register">Register</button>
         </form>
       </div>
     </div>

@@ -22,7 +22,7 @@
   <div class="header">
         <img class="header_logo" src="img/logoPizza.webp" />
       <div class="headertekst">
-        <li><a href="index.php">Main</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="betalen.php">Betalen</a></li>
         <li><a href="bestellen.php">Bestellen</a></li>

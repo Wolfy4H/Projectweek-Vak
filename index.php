@@ -18,18 +18,17 @@
   include("includes/connect.php");
 ?>
 
-  <body>
   <div class="header">
-        <img class="header_logo" src="img/logoPizza.webp" />
+      <img class="header_logo" src="img/logoPizza.webp" />
       <div class="headertekst">
         <li><a href="index.php">Home</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="betalen.php">Betalen</a></li>
         <li><a href="bestellen.php">Bestellen</a></li>
-        <li><a href="login.php">login</a></li>
+        <li><a href="login.php">Login</a></li>
       </div>
     </div>
-  <div class="header_space"></div>
+    <div class="header_space"></div>
   <div class="ruimte">
 
       <div class="aandeslag">
@@ -49,7 +48,11 @@
       </div>
     </div>
     
-    <script src="/main.js"></script>
+    <div class="slideshowplek">
+      <div class="slideshow">
+        <script src="/main.js"></script>
+      </div>
+    </div>  
 
     <div class="footer">
       <p>all information about us is on the page "Contact"</p>

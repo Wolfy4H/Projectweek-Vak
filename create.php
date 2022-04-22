@@ -41,7 +41,7 @@
             <input type="text" id="lname" name="beschrijving"><br>
             <label for="prijs">Price</label><br>
             <input type="text" id="price" name="prijs"><br>
-            <label for="categoie">afbeeldingen</label><br>
+            <label for="afbeelding">afbeeldingen</label><br>
             <input type="text" id="afbeelding" name="afbeelding" value="./img/"><br>
             <label for="categoie">Select a category</label><br>
             <select name="categorie">

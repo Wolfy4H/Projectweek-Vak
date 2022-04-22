@@ -50,7 +50,7 @@
     
     <div class="slideshowplek">
       <div class="slideshow">
-        <script src="/main.js"></script>
+        
       </div>
     </div>  
 
@@ -59,3 +59,4 @@
     </div>
   </body>
 </html>
+<script src="/js/main.js"></script>

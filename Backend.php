@@ -63,7 +63,7 @@
         </div>
         <div class="editbuttonsplek">
           <a href="upgrate.php?id=<?php echo $product['id']; ?>">
-            <button class="item_update_butn">Update</button>
+            <button class="buttonsU" class="item_update_butn">Update</button>
           </a>
             <form action="delete.php" method="post">
               <input

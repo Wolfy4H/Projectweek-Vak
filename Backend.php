@@ -32,7 +32,7 @@
     <div class="header_space"></div>
 
     <div class="buttoncreateplek">
-      <a href="/minicrud/create.php">
+      <a href="create.php">
         <button class="buttonsC">
           <p>Create</p>
         </button>
@@ -62,7 +62,7 @@
           <p>toevoegen aan bestelling</p>
         </div>
         <div class="editbuttonsplek">
-          <a href="/minicrud/create.php">
+          <a href="upgrate.php">
             <button class="buttonsU">
               <p>Update</p>
             </button>

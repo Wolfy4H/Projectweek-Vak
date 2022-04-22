@@ -1,15 +1,9 @@
-const button = document.querySelector("#pokemon");
+var i = 0;
+var images = [];
+var time = 4000; //4seconde//
 
-fetch("https://pokeapi.co/api/v2/pokemon/%22")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    data.results.forEach((data) => {
-      button.innerHTML += "<div>" + data["name"] + "</div";
-    });
-    console.log(data);
-  })
-  .catch((e) => {
-    console.log(e);
-  });
+images[0] = "logoPizza.webp";
+images[1] = "Pizza.jpg";
+images[2] = "PizzaChicken.webp";
+images[3] = "PizzaSalami.jpeg";
+images[4] = "PizzaVegan.jpeg";
